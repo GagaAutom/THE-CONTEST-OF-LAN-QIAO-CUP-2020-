@@ -10,13 +10,16 @@ public class romeNumber {
 			if(arr[i]=='X') sum += 10;
 			if(arr[i]=='L') sum += 50;
 			if(arr[i]=='C') sum += 100;
-			if(arr[i]=='D') sum += 150;
+			if(arr[i]=='D') sum += 500;
 			if(arr[i]=='M') sum += 1000;
 		}
 		//ĞŞÕı
 		if(s.indexOf("IV") >= 0 ) sum -= 2;
 		if(s.indexOf("IX") >= 0 ) sum -= 2;
 		if(s.indexOf("XL") >= 0 ) sum -= 20;
+		if(s.indexOf("XC") >= 0 ) sum -= 20;
+		if(s.indexOf("CD") >= 0 ) sum -= 200;
+		if(s.indexOf("CM") >= 0 ) sum -= 200;
 		return sum;
 	}
 	public static void main(String[] args) {

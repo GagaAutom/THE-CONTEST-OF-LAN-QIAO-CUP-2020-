@@ -1,9 +1,7 @@
 
 public class magicString {
 	public static int conbination(int x,int y) {
-		if(x == 0)
-			return 1;
-		if(y == 0)
+		if(x == 1 || y == 1)
 			return 1;
 		return conbination(x-1,y)+conbination(x,y-1);
 	}

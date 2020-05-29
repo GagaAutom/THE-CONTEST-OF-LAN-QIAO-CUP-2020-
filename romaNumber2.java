@@ -7,7 +7,7 @@ public class romaNumber2 {
 		int th = x / 1000;
 		int hu = x % 1000 / 100;
 		int te = x % 100 / 10; 
-		int on = x % 1000;
+		int on = x % 10;
 		
 		if(th == 3)  s += "MMM";
 		if(th == 2)  s += "MM";
